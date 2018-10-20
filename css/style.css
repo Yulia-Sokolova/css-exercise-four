@@ -2,3 +2,52 @@ body {
   background-color: #dadada;
   font-size: 10px;
 }
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+div {
+  /* background-color: red; */
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+h2 {
+  font-size: 15px;
+  margin: 0;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
